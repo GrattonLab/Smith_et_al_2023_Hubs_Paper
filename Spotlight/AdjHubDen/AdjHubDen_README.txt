@@ -1,0 +1,1 @@
+The script in this folder (AdjHubDenMapMakerWashU.m) makes an adjusted hub density map. Adjusted hub density is the percentage of subjects with an adjusted hub at a given location. It saves this map in a .dtseries.nii file. 
