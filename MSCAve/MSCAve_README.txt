@@ -1,0 +1,7 @@
+The scripts contained in this folder are used for making similarity maps to a leave one out reference. It was designed to do this for 9 MSC subjects with each subject being compared to a group average connectivity profile based on data from the other 8 MSC subjects.  
+
+MSCAveCalc.m: This script is just like the script MSCAveCalc_NoSave.m but it saves the connectivity profile for the MSC-1 average as dconn.nii files and then stops
+
+MSCAveCalc_NoSave.m: In a nutshell this script makes MSC -1 average maps. This script is called NoSave because it does not save the connectivity profiles for the MSC-1 averages. The script calculates the aforementioned connectivity profiles and uses them but does not save them. The purpose of this script is to make similarity maps between subject level connectivity profiles and their corresponding MSC-1 references. It gets the reference connectivity profile and then the profile for the subject, applies the Fisher Z transform to the profiles and correlates them and saves the resulting similarity map.
+
+SimStatCalc.m: This script gets the correlation between the MSC-1 similarity maps and the corresponding WashU 120 similarity map (a subject’s similarity to the WashU-120). It opens the similarity maps, applies the Fisher Z transformation, calculates the correlation, and once it does this for each subject it gets the average correlation across subjects plus the standard deviation
